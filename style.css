@@ -1,0 +1,331 @@
+body{
+    overflow-x:hidden;
+}
+.home-img{
+    width: 100%;
+    height: 95vh;
+    background-image: url('https://images.unsplash.com/photo-1614854262340-ab1ca7d079c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    color: lightgray;
+    padding-top: 1em;
+    background-color: rgb(6, 31, 81);
+    border-bottom: 1px solid rgb(100, 100, 100);
+}
+.items li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 3em;
+}
+.login{
+    float: right;
+    display: flex;
+    list-style: none;
+    margin-right: 3em;
+}
+#email{
+    background-color: rgba(255, 255, 255, 0.158);
+    color: white;
+    border: none;
+    height: 6vh;
+    width: 40vh;
+    padding: 1vh;
+    border-radius: 0.3em;
+}
+.form button{
+    margin-left: 10px;
+    height: 6vh;
+    width: 15vh;
+    border: none;
+    color: rgb(0, 115, 255);
+    font-weight: bolder;
+    border-radius: 0.6em;
+}
+::placeholder{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-left: 20vh;
+    color: white;
+    width: 70vh;
+    height: 80vh;
+}
+
+
+
+.cards{
+    margin-left: 7em;
+    margin-right: 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -80px;
+    height: 40vh;
+    width: auto;
+    overflow-x: auto;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.card1{
+    background-color: white;
+    height: 20vh;
+    width: 30vh;
+    border-radius: 0.5rem;
+    box-shadow:rgb(125, 125, 125) 0.75rem 1.5rem 4rem 0rem;
+}
+.more-price{
+    margin-top: -3em;
+    text-decoration: none;
+    color: black;
+    float: right;
+    margin-right: 8em;
+   
+}
+.more-price a{
+    text-decoration: none;
+    color: black;
+  
+}
+
+.wallet{
+    height: auto;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 5em;
+}
+.exchange{
+    height: auto;
+    margin-top: auto;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 5em;
+}
+.inst{
+    height: auto;
+    margin-top: auto;
+    margin-left: 5em;
+    margin-right: 5em; 
+    margin-bottom: 5em;
+}
+
+.wallet .con{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 70px 0px 70px 140px ;
+    background-color: rgba(115, 73, 242, 0.068);
+    border-radius: 1em;
+    
+    /* background-color: rgba(169, 187, 234, 0.127); */
+}
+
+.wallet .block{
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    border-radius: 0.5em;
+    /* display: inline-block; */
+    color: rgb(115,73,242);
+    background-color: rgb(239, 236, 254);
+}
+
+.wallet .content{
+    margin-top:2em;
+    width: 50%;
+    color: rgb(115,73,242);
+}
+
+.wallet button{
+    margin-top: 1.5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 0.75rem 1.375rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.01em;
+    line-height: 144%;
+    border-radius: 0.5rem;
+    border: 0.125rem solid transparent;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(115,73,242) ;
+}
+
+.wallet .con-block{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0.5rem 1.5rem;
+    transition: color 0.25s ease 0s;
+    z-index: 1;
+    cursor: pointer;
+    background-color: rgb(247, 245, 255);
+    border-radius: 0.75rem;
+    border: 1px solid rgb(222, 216, 253);
+    margin-bottom: 0.75rem;
+}
+
+
+.exchange .con{
+    
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 70px 0px 70px 140px ;
+    border-radius: 1em;
+    background-color: rgba(236, 245, 254, 0.5);
+
+}
+.exchange .content{
+    margin-top:2em;
+    width: 50%;
+    color: rgb(61, 137, 245);
+}
+.exchange .img{
+    height: auto;
+    width: 50%;
+}
+.exchange .block{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    border-radius: 0.5em;
+    background-color: rgb(236, 245, 254);
+    color: rgb(61, 137, 245);
+}
+
+.exchange .con-block{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0.5rem 1.5rem;
+    transition: color 0.25s ease 0s;
+    z-index: 1;
+    cursor: pointer;
+    background-color: rgb(245, 250, 254);
+    /* border-color: rgb(216, 235, 253); */
+    border-radius: 0.75rem;
+    border: 1px solid rgb(216, 235, 253);
+    margin-bottom: 0.75rem;
+}
+
+.exchange button{
+    margin-top: 1.5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 0.75rem 1.375rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.01em;
+    line-height: 144%;
+    border-radius: 0.5rem;
+    border: 0.125rem solid transparent;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(61, 137, 245);
+}
+
+.inst .con{
+    background-color: rgb(240, 242, 247);
+    background-image: url('https://www.blockchain.com/static/img/home/homepage-institutional-shapes-bg@2x.png');
+    background-size: 625px;
+    padding-top: 115px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    border-radius: 1em;
+    background-position: right center;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+}
+
+.inst .content{
+    margin-top:2em;
+    width: 50%;
+    color:rgb(18, 29, 51)
+}
+
+.inst button{
+    margin-top: 1.5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 0.75rem 1.375rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.01em;
+    line-height: 144%;
+    border-radius: 0.5rem;
+    border: 0.125rem solid transparent;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: rgb(103, 113, 133);
+}
+
+.get-started{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 40vh;
+    background-image: url('https://images.pexels.com/photos/3137078/pexels-photo-3137078.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.get-started button{
+    margin-left: 1.5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 0.75rem 1.375rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.01em;
+    line-height: 144%;
+    border-radius: 0.5rem;
+    border: 0.125rem solid transparent;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    /* background: rgb(103, 113, 133); */
+}
+
+.footer{
+    height: 100vh;
+}
+
+
+@media only screen and (max-width: 870px) {
+    .cards{
+        justify-content: space-between;
+      overflow-x: auto;
+    }
+    .card1{
+        height: 20vh;
+    width: 30vh;
+        /* margin: 1em; */
+    }
+    .get-started {
+        flex-direction: column;
+    }
+}
