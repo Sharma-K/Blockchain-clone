@@ -10,22 +10,62 @@ body{
 }
 
 .nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: lightgray;
-    padding-top: 1em;
+    padding: 1em;
     background-color: rgb(6, 31, 81);
     border-bottom: 1px solid rgb(100, 100, 100);
 }
+
 .items li{
     display: inline-block;
     list-style: none;
     margin-left: 3em;
+    cursor: pointer;
 }
+
+.btn-outline-primary{
+    color: white;
+    margin-left: 2em;
+    border-color: white;
+}
+
 .login{
-    float: right;
     display: flex;
+    align-items: center;
     list-style: none;
     margin-right: 3em;
 }
+
+.search{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 49, 108);
+    border-radius: 50%;
+    
+}
+
+
+
+.login button:nth-child(3){
+   margin-left: 2em;
+   width: 5em;
+   height: 2.5em;
+    border: none;
+    border-radius: 0.4em;
+}
+
+
+
 #email{
     background-color: rgba(255, 255, 255, 0.158);
     color: white;
@@ -48,29 +88,73 @@ body{
     color: white;
 }
 
+.shop{
+    position: sticky;
+bottom: 10vh;
+  right: 2rem;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+   
+    background-color: rgb(12, 108, 242);
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 24px
+}
+.shop img, .login img{
+    filter: invert();
+}
+
+
 .container{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     text-align: left;
-    margin-left: 20vh;
+   
     color: white;
     width: 70vh;
     height: 80vh;
 }
 
+.popcon{
+    border-radius: 1em;
+    padding: 3em;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    margin-top: 100px;
+    left: 30%;
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    box-shadow: rgb(65, 65, 65) 0.5rem 0.75rem 2rem;
+    visibility: hidden;
+}
+
+.pop{
+   opacity: 1;
+    visibility: visible;
+
+}
+
 
 
 .cards{
-    margin-left: 7em;
-    margin-right: 7em;
+    /* margin-left: 7em;
+    margin-right: 7em; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: -80px;
     height: 40vh;
-    width: auto;
+    width: 100%;
     overflow-x: auto;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -78,10 +162,48 @@ body{
 .card1{
     background-color: white;
     height: 20vh;
-    width: 30vh;
+   
+    min-width: 0px;
+
     border-radius: 0.5rem;
     box-shadow:rgb(125, 125, 125) 0.75rem 1.5rem 4rem 0rem;
 }
+
+.card1 .con{
+    padding: 1em;
+}
+.card1 .con button{
+    margin-left: 0.5em;
+    float: right;
+}
+
+.card1 .dec{
+    margin-left: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.card1 .inc{
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(69, 177, 69);
+}
+
+.card1 button{
+    color: blue;
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgba(156, 156, 243, 0.474);
+}
+
+.card1 button:nth-child(2){
+    color: green;
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgba(143, 241, 143, 0.479);
+
+}
+
 .more-price{
     margin-top: -3em;
     text-decoration: none;
@@ -131,12 +253,12 @@ body{
 
 .wallet .block{
     display: flex;
-   
     align-items: center;
     justify-content: center;
-    width: 130px;
-    height: 50px;
-    border-radius: 0.5em;
+    width: 9rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 1.5em;
     /* display: inline-block; */
     color: rgb(115,73,242);
     background-color: rgb(239, 236, 254);
@@ -179,6 +301,31 @@ body{
     margin-bottom: 0.75rem;
 }
 
+ .flexbox{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+}
+
+
+.wallet .img img{
+    width: 20rem;
+   margin-left: 10em;
+   box-shadow: rgb(125, 125, 125) 0.75rem 0.5rem 2rem;
+    border-radius: 2em;
+    transform: skewY(20px);
+    transform: perspective(200px) rotate3D(0, 1, 0, 350deg);
+}
+.exchange .img img{
+    width: 35rem;
+    margin-left: 50px;
+   box-shadow: rgb(125, 125, 125) 0.75rem 0.5rem 2rem;
+    border-radius: 2em;
+    transform: skewY(20px);
+    transform: perspective(600px) rotate3D(1, 10, 1, 25deg);
+}
+
+
 
 .exchange .con{
     
@@ -205,9 +352,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 130px;
-    height: 50px;
-    border-radius: 0.5em;
+    width: 10rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 1.5em;
     background-color: rgb(236, 245, 254);
     color: rgb(61, 137, 245);
 }
@@ -249,7 +397,7 @@ body{
     background-image: url('https://www.blockchain.com/static/img/home/homepage-institutional-shapes-bg@2x.png');
     background-size: 625px;
     padding-top: 115px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     padding-right: 100px;
     padding-left: 100px;
     border-radius: 1em;
@@ -257,6 +405,18 @@ body{
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
+}
+.inst .block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: 1.5em;
+    /* display: inline-block; */
+    background-color: rgb(223, 227, 235);
+    color: rgb(103, 113, 133);
 }
 
 .inst .content{
@@ -311,19 +471,50 @@ body{
 }
 
 .footer{
+    padding: 7.5rem;
     height: 100vh;
 }
+.footer li{
+    color: grey;
+    list-style: none;
+}
+
+.footer li:hover{
+    cursor: pointer;
+    color: blue;
+}
+.footer .con{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer .block, .products, .resources{
+    line-height: 2.5rem;
+    margin-right: 200px;
+}
+.company{
+    line-height: 2.5rem;
+}
+
 
 
 @media only screen and (max-width: 870px) {
     .cards{
-        justify-content: space-between;
-      overflow-x: auto;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 0px 16px 76px 16px;
+        /* max-width: 100%; */
+      overflow-x: scroll;
+    overflow: hidden;
     }
+   
     .card1{
-        height: 20vh;
-    width: 30vh;
-        /* margin: 1em; */
+        margin-bottom: 2em;
+      max-height: 150px;
+        min-width: 100px;
+        height: auto;
+
     }
     .get-started {
         flex-direction: column;

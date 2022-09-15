@@ -9,22 +9,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
    <div class="home-img">
     <nav class="nav">
-        <span class="ms-5">Blockchain</span><span class="text-muted">.com</span>
+        <h3 class="ms-5">Blockchain<span class="text-muted">.com</span></h3>
         <ul class="items me-5">
             <li>Wallet</li>
             <li>Exchange</li>
             <li>Explorer</li>
             <li>Institutional</li>
-            <li>...</li>
+            <li onclick="toggle()" style="color: white; font-size: 2rem">...</li>
         </ul>
         <ul class="login">
-            <li class="me-2"><img src="" alt="search"></li>
-            <button>Login</button>
+            <div class="search me-2">
+            <li><img src="https://img.icons8.com/ios-glyphs/344/search-more.png" alt=".." width="30px"></li>
+        </div>
+            <button type="button" class="btn btn-outline-primary logb">Login</button>
             <button>Sign Up</button>
         </ul>
     </nav>
+
+    <div class="popcon" id="pop">
+        <div class="products">
+            <h3>Products</h3>
+            <li>Exchange</li>
+            <li>Wallet</li>
+            <li>Explorer</li>
+            <li>Institutional</li>
+        </div>
+        <div class="resources">
+            <h3>Resources</h3>
+            <li>APIs</li>
+            <li>Status</li>
+            <li>Open source</li>
+            <li>Research</li>
+            <li>Legal and Privacy</li>
+            <li>Wallet Support</li>
+            <li>Exchange Support</li>
+            <li>Blog</li>
+            <li>Security</li>
+        </div>
+
+        <div class="company">
+            <h3>Company</h3>
+
+            <li>About</li>
+            <li>Careers</li>
+            <li>Press Center</li>
+            <li>Prime</li>
+            <li>Venrures</li>
+            <li>BCAM</li>
+        </div>
+    </div>
 
 
     <div class="container">
@@ -35,15 +71,58 @@
         <input type="email" name="email" id="email" placeholder="Your email address">
         <button>Sign Up</button>
     </div>
-    </div>
 
+    
+
+    </div>
+   
 </div>
 
+
 <div class="cards">
-    <div class="card1"></div>
-    <div class="card1"></div>
-    <div class="card1"></div>
-    <div class="card1"></div>
+    <div class="card1">
+        <div class="con">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968260.png" width="35px" alt="">
+            <button>Buy</button>
+            <button>Trade</button>
+
+            <p class="mt-3">Bitcon <span class="text-muted">BTC</span></p>
+            <p>$20,144.57 <span class="dec">-0.49%</span></p>
+        </div>
+    </div>
+    <div class="card1">
+        <div class="con">
+        <img src="https://cdn-icons-png.flaticon.com/512/6001/6001368.png" width="35px" alt="">
+        <button>Buy</button>
+            <button>Trade</button>
+
+            <p class="mt-3">Ethereum <span class="text-muted">ETH</span></p>
+            <p>$1,616.63 <span class="inc">+0.47%</span></p>
+    </div>
+    </div>
+    <div class="card1">
+        <div class="con">
+            <img src="https://cdn-icons-png.flaticon.com/512/5906/5906651.png" width="35px" alt="">
+            <button>Buy</button>
+            <button>Trade</button>
+
+            <p class="mt-3">Stellar <span class="text-muted">XLM</span></p>
+            <p>$0.10 <span class="dec">-0.19%</span></p>
+            
+        </div>
+    </div>
+    <div class="card1">
+        <div class="con">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/6001/6001527.png" width="35px" alt="">
+
+            <button>Buy</button>
+            <button>Trade</button>
+
+            <p class="mt-3">Solona <span class="text-muted">SOL</span></p>
+            <p>$33.36 <span class="inc">+0.06%</span></p>
+        </div>
+    </div>
 </div>
 
 <div class="more-price">
@@ -54,10 +133,13 @@
 
     <div class="con">
        
+        
         <div class="block">
             <img src="https://cdn-icons-png.flaticon.com/512/3885/3885840.png" width="25px" alt="" class="me-2 mb-1">
-            <h5>Wallet</h5>
+            <h5 class="ms-2 mt-2">Wallet</h5>
         </div>
+
+        <div class="flexbox">
 
         <div class="content">
         <h1 class="mb-5">The Easiest and Most Powerful Crypto Wallet</h1>
@@ -80,7 +162,12 @@
         <button>Get started</button>
     </div>
 
+<div class="img">
+    <img src="/assets/Screenshot (338).png" alt="">
+</div>
+</div>
     </div>
+   
     
        
 </div>
@@ -88,13 +175,13 @@
 <div class="exchange">
     <div class="con">
 
-        <div class="img">
-
-        </div>
-
         <div class="block">
-            <h5>Exchange</h5>
+            <img src="https://cdn-icons-png.flaticon.com/512/478/478544.png" width="25px" alt="">
+            <h5 class="ms-2 mt-2">Exchange</h5>
         </div>
+        
+        <div class="flexbox">
+
         
         <div class="content">
             <h1 class="mb-5">The Easiest and Most Powerful Crypto Wallet</h1>
@@ -116,6 +203,10 @@
             </div>
             <button>Trade Now</button>
         </div>
+        <div class="img">
+            <img src="/assets/Screenshot (340).png"  alt="">
+        </div>
+        </div>
       
     </div>
 </div>
@@ -128,7 +219,8 @@
         </div>
 
         <div class="block">
-            <h5>Institutional</h5>
+            <img src="https://cdn-icons-png.flaticon.com/512/3919/3919685.png" width="25px" alt="">
+            <h5 class="mt-2 ms-2">Institutional</h5>
         </div>
         
         <div class="content">
@@ -149,9 +241,98 @@
     <button>Get Started</button>
 </div>
 
-<div class="footer"></div>
+<div class="footer">
+    <div class="con">
+        <div class="block">
+            <h1>Blockchain</h1>
+            <ul>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="15px" alt="">
+                    Twitter
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="15px" alt="">
+                    Instagram
+                </li>
+                <li>
+                   <img src="https://cdn-icons-png.flaticon.com/512/2111/2111505.png" width="15px" alt=""> 
+                    WordPress</li>
+            </ul>
+        </div>
+        <div class="products">
+            <h3>Products</h3>
+            <li>Exchange</li>
+            <li>Wallet</li>
+            <li>Explorer</li>
+            <li>Institutional</li>
+        </div>
+        <div class="resources">
+            <h3>Resources</h3>
+            <li>APIs</li>
+            <li>Status</li>
+            <li>Open source</li>
+            <li>Research</li>
+            <li>Legal and Privacy</li>
+            <li>Wallet Support</li>
+            <li>Exchange Support</li>
+            <li>Blog</li>
+            <li>Security</li>
+        </div>
+
+        <div class="company">
+            <h3>Company</h3>
+
+            <li>About</li>
+            <li>Careers</li>
+            <li>Press Center</li>
+            <li>Prime</li>
+            <li>Venrures</li>
+            <li>BCAM</li>
+        </div>
+    </div>
+
+    <div class="copyright mt-5">
+        
+        <li class="mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/117/117965.png" width="20px" alt="..">
+            English
+        </li>
+        <li class="mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/2592/2592201.png" width="20px" alt="..">
+            Blockchain.com
+        </li>
+
+        <li class="mb-3">
+            Blockchain.com, Inc. NMLS ID# 2024031 | NMLS Consumer Access
+        </li>
+
+    </div>
+</div>
+<div class="shop">
+        
+    <img src="https://cdn-icons-png.flaticon.com/512/2838/2838838.png"   width="40px" alt="">
+ </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<script>
+
+    var c = 0;
+    function toggle(){
+        var pop = document.getElementById('pop');
+        if(c==0)
+        {
+            pop.classList.add("pop");
+            c=1;
+        }
+        else
+        {
+            pop.classList.remove("pop");
+            c=0;
+        }
+    }
+</script>
