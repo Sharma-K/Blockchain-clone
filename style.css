@@ -124,10 +124,19 @@ bottom: 10vh;
     width: 70vh;
     height: 80vh;
 }
+.three{
+    margin-top: -5px;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.nav-item, .navbar-brand{
+    margin-left: 3rem;
+}
 
 .popcon{
-    border-radius: 1em;
-    padding: 3em;
+    border-radius: .5em;
+    padding: 2em;
     display: flex;
     overflow-y: scroll;
     flex-direction: row;
@@ -140,6 +149,11 @@ bottom: 10vh;
     background-color: white;
     box-shadow: rgb(65, 65, 65) 0.5rem 0.75rem 2rem;
     visibility: hidden;
+}
+
+.popcon li:hover{
+    color: blue;
+    cursor: pointer;
 }
 
 .pop{
@@ -577,6 +591,10 @@ bottom: 10vh;
         
     }
 
+    .inst .con{
+        background: none;
+    }
+
 }
 
 @media only screen and (max-width: 990px) {
@@ -584,7 +602,7 @@ bottom: 10vh;
         position: absolute;
         padding: 1em;
       left: 10px;
-      top: 200px;
+      top: 270px;
       width: 400px;
     }
 }
