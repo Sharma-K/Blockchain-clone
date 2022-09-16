@@ -1,0 +1,57 @@
+.cards{
+    /* margin-left: 7em;
+    margin-right: 7em; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -80px;
+    height: 40vh;
+    width: 100%;
+    overflow-x: auto;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.card1{
+    background-color: white;
+    height: 20vh;
+   
+    min-width: 0px;
+
+    border-radius: 0.5rem;
+    box-shadow:rgb(125, 125, 125) 0.75rem 1.5rem 4rem 0rem;
+}
+
+.card1 .con{
+    padding: 1em;
+}
+.card1 .con button{
+    margin-left: 0.5em;
+    float: right;
+}
+
+.card1 .dec{
+    margin-left: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.card1 .inc{
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(69, 177, 69);
+}
+
+.card1 button{
+    color: blue;
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgba(156, 156, 243, 0.474);
+}
+
+.card1 button:nth-child(2){
+    color: green;
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgba(143, 241, 143, 0.479);
+
+}
