@@ -55,3 +55,24 @@
     background-color: rgba(143, 241, 143, 0.479);
 
 }
+@media only screen and (max-width: 870px) {
+    .cards{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 0px 16px 76px 16px;
+        /* max-width: 100%; */
+      overflow-x: scroll;
+    overflow: hidden;
+    }
+   
+    .card1{
+        margin-bottom: 2em;
+      max-height: 150px;
+        min-width: 100px;
+        height: auto;
+
+    }
+    .get-started {
+        flex-direction: column;
+    }
+}

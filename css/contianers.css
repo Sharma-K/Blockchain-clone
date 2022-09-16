@@ -222,3 +222,85 @@
     color: rgb(255, 255, 255);
     background: rgb(103, 113, 133);
 }
+
+@media only screen and (max-width: 900px) {
+
+    .wallet{
+        margin: 2em;
+        
+    }
+    .wallet .con{
+        padding: 2em;
+    }
+
+    .wallet .content{
+        width: 100%;
+    }
+
+    .flexbox .img{
+        visibility: hidden;
+        overflow: hidden;
+       position: absolute;
+    }
+    .wallet .flexbox{
+        width: 100%;
+        padding: 1em;
+        flex-direction: column;
+        /* display: inline; */
+        
+    }
+
+    .exchange{
+        margin: 2em;
+        
+    }
+    .exchange .con{
+        padding: 2em;
+    }
+
+    .exchange .content{
+        width: 100%;
+    }
+
+    .flexbox .img{
+        visibility: hidden;
+        overflow: hidden;
+       position: absolute;
+    }
+    .exchange .flexbox{
+        width: 100%;
+        padding: 1em;
+        flex-direction: column;
+        /* display: inline; */
+        
+    }
+    .inst{
+        margin: 2em;
+        
+    }
+    .inst .con{
+        padding: 2em;
+    }
+
+    .inst .content{
+        width: 100%;
+    }
+
+    .flexbox img{
+        visibility: hidden;
+        overflow: hidden;
+       position: absolute;
+    }
+    .inst .flexbox{
+        width: 100%;
+        padding: 1em;
+        flex-direction: column;
+        /* display: inline; */
+        
+    }
+
+    .inst .con{
+        background: none;
+    }
+
+}
