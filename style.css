@@ -223,6 +223,7 @@ bottom: 10vh;
 }
 
 .more-price{
+    transition: 0.3s ease;
     margin-top: -3em;
     text-decoration: none;
     color: black;
@@ -234,6 +235,9 @@ bottom: 10vh;
     text-decoration: none;
     color: black;
   
+}
+.more-price img{
+    transition: 2ms ease;
 }
 
 .wallet{
@@ -513,6 +517,11 @@ bottom: 10vh;
 }
 .company{
     line-height: 2.5rem;
+}
+
+ .more-price:hover{
+    
+    transform: translateX(8px);
 }
 
 @media only screen and (max-width: 900px) {
