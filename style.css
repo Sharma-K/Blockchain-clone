@@ -9,9 +9,13 @@ body{
     background-size: cover;
 }
 
-.nav{
+li{
+    list-style: none;
+}
+
+
+.navbar{
     width: 100%;
-    position: absolute;
     top: 0;
     display: flex;
     align-items: center;
@@ -22,7 +26,7 @@ body{
     border-bottom: 1px solid rgb(100, 100, 100);
 }
 
-.items li{
+.nav-item li{
     display: inline-block;
     list-style: none;
     margin-left: 3em;
@@ -129,7 +133,7 @@ bottom: 10vh;
     flex-direction: row;
     flex-wrap: wrap;
     position: fixed;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     left: 30%;
     width: 600px;
     height: 500px;
@@ -497,7 +501,93 @@ bottom: 10vh;
     line-height: 2.5rem;
 }
 
+@media only screen and (max-width: 900px) {
 
+    .wallet{
+        margin: 2em;
+        
+    }
+    .wallet .con{
+        padding: 2em;
+    }
+
+    .wallet .content{
+        width: 100%;
+    }
+
+    .flexbox .img{
+        visibility: hidden;
+        overflow: hidden;
+       position: absolute;
+    }
+    .wallet .flexbox{
+        width: 100%;
+        padding: 1em;
+        flex-direction: column;
+        /* display: inline; */
+        
+    }
+
+    .exchange{
+        margin: 2em;
+        
+    }
+    .exchange .con{
+        padding: 2em;
+    }
+
+    .exchange .content{
+        width: 100%;
+    }
+
+    .flexbox .img{
+        visibility: hidden;
+        overflow: hidden;
+       position: absolute;
+    }
+    .exchange .flexbox{
+        width: 100%;
+        padding: 1em;
+        flex-direction: column;
+        /* display: inline; */
+        
+    }
+    .inst{
+        margin: 2em;
+        
+    }
+    .inst .con{
+        padding: 2em;
+    }
+
+    .inst .content{
+        width: 100%;
+    }
+
+    .flexbox img{
+        visibility: hidden;
+        overflow: hidden;
+       position: absolute;
+    }
+    .inst .flexbox{
+        width: 100%;
+        padding: 1em;
+        flex-direction: column;
+        /* display: inline; */
+        
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+    .popcon{
+        position: absolute;
+        padding: 1em;
+      left: 10px;
+      top: 200px;
+      width: 400px;
+    }
+}
 
 @media only screen and (max-width: 870px) {
     .cards{
